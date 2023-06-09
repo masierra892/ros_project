@@ -293,6 +293,9 @@ For the main move_base whole package, please use the following command.
 
 メインのmove_baseパッケージを起動するには、次のコマンドを使用します。
 
+THE MAIN OBJECTIVE OF THIS PROJECT IS THIS NEXT PROGRAM
+このプロジェクトの主な目的は、次のプログラムです。
+
 ```
 source ~/catkin_ws/devel/setup.bash
 ./catkin_ws/src/ros_project/scripts/move_base_controller_py.sh
