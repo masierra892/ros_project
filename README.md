@@ -266,7 +266,7 @@ naiveコントローラーを使用する場合は、次のいずれかを使用
 この場合、ナビゲーションスタックを起動する必要はありません。
 
 ```
-rosrun controller_cpp wanderer_controller.py
+rosrun controller_py wanderer_controller.py
 ```
 or
 ```
