@@ -443,5 +443,5 @@ roslaunch project_launcher project_launcher_move_base_py.launch map_path:=/home/
 Please replace `ubuntu` in the map_path argument with your own username.
 map_path引数の中の `ubuntu` をご自身のユーザー名で置き換えてください。
 
-
-
+THERE ARE CASES WHERE ROCKER CANNOT HANDLE RVIZ OR GAZEBO.
+RockerがRVIZやGazeboを実行できない場合があります。
