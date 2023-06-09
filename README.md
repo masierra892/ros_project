@@ -264,16 +264,16 @@ If you want to launch the whole system in one terminal you can use the following
 chmod +x <sh-file> # Replace the sh-file with the name of each file in the scripts folder. 
 ```
 
-Then launch the whole project. 
+Then launch the whole project from the home directory. Catkin workspace should be in the home directory. 
 
 For the main move_base whole package, please use the following command.
 
-次に、プロジェクト全体を起動します。
+次に、ホームディレクトリからプロジェクト全体を起動します。Catkinワークスペースはホームディレクトリに配置されている必要があります。
 
 メインのmove_baseパッケージを起動するには、次のコマンドを使用します。
 
 ```
-.~/catkin_ws/ros_project/scripts/move_base_controller_py.sh
+./catkin_ws/ros_project/scripts/move_base_controller_py.sh
 ```
 
 For the naive controllers, please use this one (Optional)
@@ -281,11 +281,11 @@ For the naive controllers, please use this one (Optional)
 naiveコントローラーを使用する場合は、次のいずれかを使用してください（任意）
 
 ```
-.~/catkin_ws/ros_project/scripts/naive_controller_py.sh
+./catkin_ws/ros_project/scripts/naive_controller_py.sh
 ```
 or
 ```
-.~/catkin_ws/ros_project/scripts/naive_controller_cpp.sh
+./catkin_ws/ros_project/scripts/naive_controller_cpp.sh
 ```
 
 # Docker_Beta
