@@ -245,8 +245,9 @@ ros_project内のmapフォルダをホームフォルダにコピーする必要
 次に、以下のコマンドを使用してナビゲーションスタックを起動します。マップフォルダはそこにコピーされている必要があり、map_file引数が正しく定義されていることを確認してください。必要に応じて引数を他のフォルダに変更することもできます。
 
 ```
-$ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
+source ~/catkin_ws/devel/setup.bash
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
 
 And then use rosrun to run the controller nodes separately to be able to see all the output
