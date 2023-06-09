@@ -266,11 +266,13 @@ naiveコントローラーを使用する場合は、次のいずれかを使用
 この場合、ナビゲーションスタックを起動する必要はありません。
 
 ```
-rosrun controller_py wanderer_controller.py
+source ~/catkin_ws/devel/setup.bash
+rosrun controller_py wander_controller.py
 ```
 or
 ```
-rosrun controller_cpp controller_cpp
+source ~/catkin_ws/devel/setup.bash
+rosrun controller_cpp cpp_controller
 ```
 
 #### Using the bash files
