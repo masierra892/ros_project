@@ -392,7 +392,7 @@ Make sure that you have built the custom docker image using:
 カスタムのDockerイメージを構築したことを確認してください。
 
 ```
-.~/catkin_ws/ros_project/scripts/create_docker_image.sh
+./catkin_ws/src/ros_project/scripts/create_docker_image.sh
 ```
 
 The installation will take a while. After is done, launch the container.
@@ -400,7 +400,7 @@ The installation will take a while. After is done, launch the container.
 インストールには時間がかかります。完了したら、コンテナを起動します。
 
 ```
-.~/catkin_ws/ros_project/scripts/launch_container.sh
+./catkin_ws/src/ros_project/scripts/launch_container.sh
 ```
 
 All the following steps will be done on the terminal that is insde the container. Go to the directory and compile:
@@ -413,6 +413,8 @@ rosdepを使用して、不足しているライブラリの依存関係をチ�
 
 ```
 cd ~/catkin_ws
+sudo apt update
+rosdep update
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
@@ -426,7 +428,7 @@ For the main move_base whole package, please use the following command.
 メインのmove_baseパッケージを使用するには、次のコマンドを使用してください。
 
 ```
-.~/catkin_ws/ros_project/scripts/move_base_controller_py.sh
+./catkin_ws/src/ros_project/scripts/move_base_controller_py.sh
 ```
 
 
