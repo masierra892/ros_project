@@ -239,6 +239,14 @@ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 And then use roslaunch to run the controller nodes separately to be able to see all the output
 その後、コントローラーノードを個別に実行してすべての出力を表示できます。
 ```
+rosrun controller_cpp move_base_controller.py
+```
+
+For the naive controllers, please use this one (Optional)
+
+naiveコントローラーを使用する場合は、次のいずれかを使用してください（任意）
+
+```
 rosrun controller_cpp wanderer_controller.py
 ```
 or
