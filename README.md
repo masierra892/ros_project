@@ -8,7 +8,7 @@ There are two options to compile the pacakge: Source or Docker.
 
 このREADMEファイルは、PythonとC++(BETA)を使用して作成されたROS1上の例のノードで、Gazeboを使用してシミュレーション環境でTurtlebot3を制御するためのものです。目的は、ロボットが障害物を避けながらReal Worldシミュレーション環境で徘徊するためのコントローラを作成することです。
 
-この作業には、以下の要件があります。
+このプロジェクトには、以下のDEPENDENCYの必要があります。
 
 パッケージをコンパイルするには2つのオプションがあります：ソースまたはDocker。
 
