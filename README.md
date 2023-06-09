@@ -233,10 +233,23 @@ source ~/catkin_ws/devel/setup.bash
 You can launch the Gazebo simulation using the following code in one terminal.
 次のコードを使用して、Gazeboシミュレーションを1つのターミナルで起動できます。
 ```
-export TURTLEBOT3_MODEL=waffle
+export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
-And then use roslaunch to run the controller nodes separately to be able to see all the output
+You will need to copy the map folder inside the ros_project to your home folder.
+
+Then use the following commands to launch the navigation stack. The map folder should be copied there so that the map_file argument is well defined. You can modify the argument to other folder if you want.
+
+ros_project内のmapフォルダをホームフォルダにコピーする必要があります。
+
+次に、以下のコマンドを使用してナビゲーションスタックを起動します。マップフォルダはそこにコピーされている必要があり、map_file引数が正しく定義されていることを確認してください。必要に応じて引数を他のフォルダに変更することもできます。
+
+```
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
+```
+
+And then use rosrun to run the controller nodes separately to be able to see all the output
 その後、コントローラーノードを個別に実行してすべての出力を表示できます。
 ```
 rosrun controller_cpp move_base_controller.py
@@ -244,7 +257,11 @@ rosrun controller_cpp move_base_controller.py
 
 For the naive controllers, please use this one (Optional)
 
+In this case there is no need to launch the navigation stack.
+
 naiveコントローラーを使用する場合は、次のいずれかを使用してください（任意）
+
+この場合、ナビゲーションスタックを起動する必要はありません。
 
 ```
 rosrun controller_cpp wanderer_controller.py
