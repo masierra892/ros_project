@@ -212,8 +212,13 @@ Go to the directory and compile:
 
 ディレクトリに移動してコンパイルします：
 
+Please also use rosdep to check and install any missing dependencies.
+
+rosdepを使用して、不足しているライブラリの依存関係をチェックし、インストールしてください。
+
 ```
 cd ~/catkin_ws
+rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
@@ -394,8 +399,13 @@ All the following steps will be done on the terminal that is insde the container
 
 以降の手順は、コンテナ内のターミナルで実行されます。ディレクトリに移動してコンパイルします。
 
+Please also use rosdep to check and install any missing dependencies.
+
+rosdepを使用して、不足しているライブラリの依存関係をチェックし、インストールしてください。
+
 ```
-cd catkin_ws
+cd ~/catkin_ws
+rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
