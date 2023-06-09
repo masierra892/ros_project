@@ -17,7 +17,7 @@ There are two options to compile the pacakge: Source or Docker.
   - [Source_General_Dependencies](#source_general_dependencies)
   - [Source_Dependencies](#source_dependencies)
   - [Source_Run](#source_run)
-- [Docker](#docker)
+- [Docker_Beta](#docker_beta)
   - [Docker_Requirements](#docker_requirements)
   - [Docker_Run](#docker_run)
 
@@ -288,7 +288,7 @@ or
 .~/catkin_ws/ros_project/scripts/naive_controller_cpp.sh
 ```
 
-# Docker (Beta)
+# Docker_Beta
 
 Docker launches the program on a container which makes it easy to install and use on any development environment. In this case there is no need to install any ROS extra dependency.
 
