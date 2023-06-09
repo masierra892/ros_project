@@ -294,7 +294,7 @@ For the main move_base whole package, please use the following command.
 メインのmove_baseパッケージを起動するには、次のコマンドを使用します。
 
 ```
-./catkin_ws/ros_project/scripts/move_base_controller_py.sh
+./catkin_ws/src/ros_project/scripts/move_base_controller_py.sh
 ```
 
 For the naive controllers, please use this one (Optional)
@@ -302,11 +302,11 @@ For the naive controllers, please use this one (Optional)
 naiveコントローラーを使用する場合は、次のいずれかを使用してください（任意）
 
 ```
-./catkin_ws/ros_project/scripts/naive_controller_py.sh
+./catkin_ws/src/ros_project/scripts/naive_controller_py.sh
 ```
 or
 ```
-./catkin_ws/ros_project/scripts/naive_controller_cpp.sh
+./catkin_ws/src/ros_project/scripts/naive_controller_cpp.sh
 ```
 
 # Docker_Beta
