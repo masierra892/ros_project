@@ -288,7 +288,7 @@ or
 .~/catkin_ws/ros_project/scripts/naive_controller_cpp.sh
 ```
 
-# Docker
+# Docker (Beta)
 
 Docker launches the program on a container which makes it easy to install and use on any development environment. In this case there is no need to install any ROS extra dependency.
 
@@ -430,6 +430,18 @@ For the main move_base whole package, please use the following command.
 ```
 ./catkin_ws/src/ros_project/scripts/move_base_controller_py.sh
 ```
+
+If by any chance the script fails, please follow the next commands from the entrance folder of the Container:
+
+もし何かの理由でスクリプトが失敗した場合は、コンテナの入り口フォルダから次のコマンドを実行してください。
+
+```
+source ./catkin_ws/devel/setup.bash
+export TURTLEBOT3_MODEL=burger
+roslaunch project_launcher project_launcher_move_base_py.launch map_path:=/home/ubuntu/catkin_ws/src/ros_project/map/map.yaml
+```
+Please replace `ubuntu` in the map_path argument with your own username.
+map_path引数の中の `ubuntu` をご自身のユーザー名で置き換えてください。
 
 
 
