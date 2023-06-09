@@ -253,6 +253,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map
 And then use rosrun to run the controller nodes separately to be able to see all the output
 その後、コントローラーノードを個別に実行してすべての出力を表示できます。
 ```
+source ~/catkin_ws/devel/setup.bash
 rosrun controller_cpp move_base_controller.py
 ```
 
